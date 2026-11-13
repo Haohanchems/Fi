@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư viện ảnh tương tác</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="addTabFocus()">
+  <header>
+    <h1>Thư viện ảnh tương tác</h1>
+  </header>
+
+  <main>
+    <div id="image" aria-live="polite">Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.</div>
+
+    <div class="gallery">
+      <img class="preview" src="anh1.jpg" alt="Ảnh số 1: mô tả ảnh của bạn"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh2.jpg" alt="Ảnh số 2: mô tả ảnh của bạn"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh3.jpg" alt="Ảnh số 3: mô tả ảnh của bạn"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh4.jpg" alt="Ảnh số 4: mô tả ảnh của bạn"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh5.jpg" alt="Ảnh số 5: mô tả ảnh của bạn"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh6.jpg" alt="Ảnh số 6: mô tả ảnh của bạn"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
